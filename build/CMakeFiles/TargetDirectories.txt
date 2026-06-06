@@ -1,0 +1,3 @@
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/seg.dir
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/edit_cache.dir
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/rebuild_cache.dir
