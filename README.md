@@ -61,7 +61,7 @@ sudo apt install build-essential cmake libpcl-dev libcgal-dev
 Segmentation_Nuage_Points/
 ├── CMakeLists.txt
 ├── main.cpp
-├── L001.ply
+├── fragment.ply
 └── build/
 ```
 
