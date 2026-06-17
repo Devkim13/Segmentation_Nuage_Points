@@ -12,6 +12,8 @@ find_package(PCL REQUIRED COMPONENTS
         features
         kdtree
         search
+        segmentation
+        sample_consensus
         visualization
 )
 

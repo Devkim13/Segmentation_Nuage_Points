@@ -1,0 +1,102 @@
+{
+  "primitives": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "type": "floor",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 1104,
+      "centroid": [2.67597, 1.69284, 1.69404],
+      "bbox": {
+        "min": [0.779422, 1.03346, 1.30861],
+        "max": [3.87829, 2.40159, 2.27973]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Wall_1",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 660,
+      "centroid": [2.07948, 2.39848, 1.40848],
+      "bbox": {
+        "min": [0.725586, 2.36202, 0.772041],
+        "max": [3.47215, 2.41805, 2.30961]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Support_3",
+      "type": "horizontal_support",
+      "level": 2,
+      "parent_id": 1,
+      "relation_to_parent": "posed_on",
+      "number_of_points": 398,
+      "centroid": [1.11485, 1.59252, 2.26886],
+      "bbox": {
+        "min": [0.623997, 0.866472, 2.17244],
+        "max": [1.42699, 2.32831, 2.41823]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Wall_2",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 360,
+      "centroid": [1.71452, 1.74666, 1.65823],
+      "bbox": {
+        "min": [1.62374, 1.07943, 1.37394],
+        "max": [1.8133, 2.3311, 1.93267]
+      }
+    },
+    {
+      "id": 5,
+      "name": "UnclassifiedObject_5",
+      "type": "object_cluster",
+      "level": 2,
+      "parent_id": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 923,
+      "centroid": [2.69252, 2.00258, 1.25079],
+      "bbox": {
+        "min": [2.08203, 1.5442, 0.88944],
+        "max": [3.8545, 2.3713, 1.65234]
+      }
+    },
+    {
+      "id": 6,
+      "name": "WallObject_6",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 4,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 249,
+      "centroid": [1.45336, 1.90316, 1.20421],
+      "bbox": {
+        "min": [1.32225, 1.32178, 0.921749],
+        "max": [1.57964, 2.37062, 1.61236]
+      }
+    },
+    {
+      "id": 7,
+      "name": "UnclassifiedObject_7",
+      "type": "object_cluster",
+      "level": 2,
+      "parent_id": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 147,
+      "centroid": [0.764876, 1.95341, 2.08108],
+      "bbox": {
+        "min": [0.699219, 1.53296, 1.88831],
+        "max": [0.804952, 2.32628, 2.23884]
+      }
+    }
+  ]
+}

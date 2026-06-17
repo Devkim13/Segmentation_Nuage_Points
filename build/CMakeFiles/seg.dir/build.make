@@ -92,15 +92,17 @@ seg_EXTERNAL_OBJECTS =
 
 seg: CMakeFiles/seg.dir/main.cpp.o
 seg: CMakeFiles/seg.dir/build.make
-seg: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+seg: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+seg: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
 seg: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so
 seg: /usr/lib/libOpenNI.so
 seg: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 seg: /usr/lib/x86_64-linux-gnu/libOpenNI2.so
 seg: /usr/lib/x86_64-linux-gnu/libusb-1.0.so
 seg: /usr/lib/x86_64-linux-gnu/libflann_cpp.so.1.9.2
+seg: /usr/lib/x86_64-linux-gnu/libpcl_features.so
 seg: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
-seg: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+seg: /usr/lib/x86_64-linux-gnu/libpcl_ml.so
 seg: /usr/lib/x86_64-linux-gnu/libpcl_io.so
 seg: /usr/lib/x86_64-linux-gnu/libpng.so
 seg: /usr/lib/x86_64-linux-gnu/libz.so

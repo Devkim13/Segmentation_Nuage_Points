@@ -516,6 +516,15 @@ PCL_KDTREE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 //path to pcl_kdtree library debug
 PCL_KDTREE_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
 
+//path to ml headers
+PCL_ML_INCLUDE_DIR:PATH=/usr/include/pcl-1.14
+
+//path to pcl_ml library
+PCL_ML_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_ml.so
+
+//path to pcl_ml library debug
+PCL_ML_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_ml.so
+
 //path to octree headers
 PCL_OCTREE_INCLUDE_DIR:PATH=/usr/include/pcl-1.14
 
@@ -542,6 +551,15 @@ PCL_SEARCH_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_search.so
 
 //path to pcl_search library debug
 PCL_SEARCH_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_search.so
+
+//path to segmentation headers
+PCL_SEGMENTATION_INCLUDE_DIR:PATH=/usr/include/pcl-1.14
+
+//path to pcl_segmentation library
+PCL_SEGMENTATION_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
+
+//path to pcl_segmentation library debug
+PCL_SEGMENTATION_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so
 
 //path to visualization headers
 PCL_VISUALIZATION_INCLUDE_DIR:PATH=/usr/include/pcl-1.14
@@ -1294,7 +1312,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenNI:INTERNAL=[/usr/lib/libOpenNI.so;libusb::libu
 //Details about finding OpenNI2
 FIND_PACKAGE_MESSAGE_DETAILS_OpenNI2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb][/usr/include/openni2][v2.2.0.33()]
 //Details about finding PCL
-FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_octree;pcl_io;pcl_sample_consensus;pcl_filters;pcl_features;pcl_kdtree;pcl_search;pcl_visualization;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN][/usr/include/pcl-1.14;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_octree;pcl_io;pcl_filters;pcl_features;pcl_kdtree;pcl_search;pcl_ml;pcl_segmentation;pcl_sample_consensus;pcl_visualization;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN][/usr/include/pcl-1.14;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2][v()]
 //Details about finding PCL_2D
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_2D:INTERNAL=[/usr/include/pcl-1.14][v()]
 //Details about finding PCL_COMMON
@@ -1309,12 +1327,16 @@ FIND_PACKAGE_MESSAGE_DETAILS_PCL_GEOMETRY:INTERNAL=[/usr/include/pcl-1.14][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_IO:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_io.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_KDTREE
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_KDTREE:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so][/usr/include/pcl-1.14][v()]
+//Details about finding PCL_ML
+FIND_PACKAGE_MESSAGE_DETAILS_PCL_ML:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_ml.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_OCTREE
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_OCTREE:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_octree.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_SAMPLE_CONSENSUS
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_SAMPLE_CONSENSUS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_SEARCH
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_SEARCH:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_search.so][/usr/include/pcl-1.14][v()]
+//Details about finding PCL_SEGMENTATION
+FIND_PACKAGE_MESSAGE_DETAILS_PCL_SEGMENTATION:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_VISUALIZATION
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_VISUALIZATION:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_visualization.so][/usr/include/pcl-1.14][v()]
 //Details about finding PNG
@@ -1467,6 +1489,12 @@ PCL_KDTREE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 PCL_KDTREE_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_KDTREE_LIBRARY_DEBUG
 PCL_KDTREE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_ML_INCLUDE_DIR
+PCL_ML_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_ML_LIBRARY
+PCL_ML_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_ML_LIBRARY_DEBUG
+PCL_ML_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_OCTREE_INCLUDE_DIR
 PCL_OCTREE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_OCTREE_LIBRARY
@@ -1485,6 +1513,12 @@ PCL_SEARCH_INCLUDE_DIR-ADVANCED:INTERNAL=1
 PCL_SEARCH_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_SEARCH_LIBRARY_DEBUG
 PCL_SEARCH_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SEGMENTATION_INCLUDE_DIR
+PCL_SEGMENTATION_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SEGMENTATION_LIBRARY
+PCL_SEGMENTATION_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SEGMENTATION_LIBRARY_DEBUG
+PCL_SEGMENTATION_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_VISUALIZATION_INCLUDE_DIR
 PCL_VISUALIZATION_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_VISUALIZATION_LIBRARY

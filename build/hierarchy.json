@@ -1,0 +1,72 @@
+{
+  "id": 0,
+  "name": "Scene",
+  "type": "room_or_indoor_scene",
+  "level": 0,
+  "relation_to_parent": "root",
+  "children": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "type": "floor",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 3,
+          "name": "Support_3",
+          "type": "horizontal_support",
+          "level": 2,
+          "relation_to_parent": "posed_on",
+          "children": [
+          ]
+        },
+        {
+          "id": 5,
+          "name": "UnclassifiedObject_5",
+          "type": "object_cluster",
+          "level": 2,
+          "relation_to_parent": "unknown_or_on_floor",
+          "children": [
+          ]
+        },
+        {
+          "id": 7,
+          "name": "UnclassifiedObject_7",
+          "type": "object_cluster",
+          "level": 2,
+          "relation_to_parent": "unknown_or_on_floor",
+          "children": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Wall_1",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Wall_2",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 6,
+          "name": "WallObject_6",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        }
+      ]
+    }
+  ]
+}
