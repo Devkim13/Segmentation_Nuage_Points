@@ -117,24 +117,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named seg
+# Target rules for targets named seg_gui
 
 # Build rule for target.
-seg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seg
-.PHONY : seg
+seg_gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seg_gui
+.PHONY : seg_gui
 
 # fast build rule for target.
-seg/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/build
-.PHONY : seg/fast
+seg_gui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/build
+.PHONY : seg_gui/fast
+
+#=============================================================================
+# Target rules for targets named seg_gui_autogen_timestamp_deps
+
+# Build rule for target.
+seg_gui_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seg_gui_autogen_timestamp_deps
+.PHONY : seg_gui_autogen_timestamp_deps
+
+# fast build rule for target.
+seg_gui_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui_autogen_timestamp_deps.dir/build.make CMakeFiles/seg_gui_autogen_timestamp_deps.dir/build
+.PHONY : seg_gui_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named seg_gui_autogen
+
+# Build rule for target.
+seg_gui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 seg_gui_autogen
+.PHONY : seg_gui_autogen
+
+# fast build rule for target.
+seg_gui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui_autogen.dir/build.make CMakeFiles/seg_gui_autogen.dir/build
+.PHONY : seg_gui_autogen/fast
+
+MainWindow.o: MainWindow.cpp.o
+.PHONY : MainWindow.o
+
+# target to build an object file
+MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/MainWindow.cpp.o
+.PHONY : MainWindow.cpp.o
+
+MainWindow.i: MainWindow.cpp.i
+.PHONY : MainWindow.i
+
+# target to preprocess a source file
+MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/MainWindow.cpp.i
+.PHONY : MainWindow.cpp.i
+
+MainWindow.s: MainWindow.cpp.s
+.PHONY : MainWindow.s
+
+# target to generate assembly for a file
+MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/MainWindow.cpp.s
+.PHONY : MainWindow.cpp.s
+
+PointCloudPipeline.o: PointCloudPipeline.cpp.o
+.PHONY : PointCloudPipeline.o
+
+# target to build an object file
+PointCloudPipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/PointCloudPipeline.cpp.o
+.PHONY : PointCloudPipeline.cpp.o
+
+PointCloudPipeline.i: PointCloudPipeline.cpp.i
+.PHONY : PointCloudPipeline.i
+
+# target to preprocess a source file
+PointCloudPipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/PointCloudPipeline.cpp.i
+.PHONY : PointCloudPipeline.cpp.i
+
+PointCloudPipeline.s: PointCloudPipeline.cpp.s
+.PHONY : PointCloudPipeline.s
+
+# target to generate assembly for a file
+PointCloudPipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/PointCloudPipeline.cpp.s
+.PHONY : PointCloudPipeline.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +216,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,8 +224,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg.dir/build.make CMakeFiles/seg.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+seg_gui_autogen/mocs_compilation.o: seg_gui_autogen/mocs_compilation.cpp.o
+.PHONY : seg_gui_autogen/mocs_compilation.o
+
+# target to build an object file
+seg_gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/seg_gui_autogen/mocs_compilation.cpp.o
+.PHONY : seg_gui_autogen/mocs_compilation.cpp.o
+
+seg_gui_autogen/mocs_compilation.i: seg_gui_autogen/mocs_compilation.cpp.i
+.PHONY : seg_gui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+seg_gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/seg_gui_autogen/mocs_compilation.cpp.i
+.PHONY : seg_gui_autogen/mocs_compilation.cpp.i
+
+seg_gui_autogen/mocs_compilation.s: seg_gui_autogen/mocs_compilation.cpp.s
+.PHONY : seg_gui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+seg_gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/seg_gui.dir/build.make CMakeFiles/seg_gui.dir/seg_gui_autogen/mocs_compilation.cpp.s
+.PHONY : seg_gui_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -161,10 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... seg"
+	@echo "... seg_gui_autogen"
+	@echo "... seg_gui_autogen_timestamp_deps"
+	@echo "... seg_gui"
+	@echo "... MainWindow.o"
+	@echo "... MainWindow.i"
+	@echo "... MainWindow.s"
+	@echo "... PointCloudPipeline.o"
+	@echo "... PointCloudPipeline.i"
+	@echo "... PointCloudPipeline.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... seg_gui_autogen/mocs_compilation.o"
+	@echo "... seg_gui_autogen/mocs_compilation.i"
+	@echo "... seg_gui_autogen/mocs_compilation.s"
 .PHONY : help
 
 

@@ -7,42 +7,24 @@
   "children": [
     {
       "id": 1,
-      "name": "Floor",
-      "type": "floor",
+      "name": "InclinedPlane_1",
+      "type": "inclined_plane",
       "level": 1,
-      "relation_to_parent": "part_of_scene",
+      "relation_to_parent": "unknown_relation",
       "children": [
-        {
-          "id": 3,
-          "name": "Support_3",
-          "type": "horizontal_support",
-          "level": 2,
-          "relation_to_parent": "posed_on",
-          "children": [
-          ]
-        },
-        {
-          "id": 5,
-          "name": "UnclassifiedObject_5",
-          "type": "object_cluster",
-          "level": 2,
-          "relation_to_parent": "unknown_or_on_floor",
-          "children": [
-          ]
-        },
-        {
-          "id": 7,
-          "name": "UnclassifiedObject_7",
-          "type": "object_cluster",
-          "level": 2,
-          "relation_to_parent": "unknown_or_on_floor",
-          "children": [
-          ]
-        }
       ]
     },
     {
       "id": 2,
+      "name": "InclinedPlane_2",
+      "type": "inclined_plane",
+      "level": 1,
+      "relation_to_parent": "unknown_relation",
+      "children": [
+      ]
+    },
+    {
+      "id": 3,
       "name": "Wall_1",
       "type": "wall",
       "level": 1,
@@ -57,15 +39,420 @@
       "level": 1,
       "relation_to_parent": "part_of_scene",
       "children": [
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Wall_3",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Wall_4",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
         {
-          "id": 6,
-          "name": "WallObject_6",
+          "id": 42,
+          "name": "WallObject_42",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 45,
+          "name": "WallObject_45",
           "type": "wall_object",
           "level": 2,
           "relation_to_parent": "attached_to_wall",
           "children": [
           ]
         }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Wall_5",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Wall_6",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 19,
+          "name": "WallObject_19",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 37,
+          "name": "WallObject_37",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 43,
+          "name": "WallObject_43",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 46,
+          "name": "WallObject_46",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 48,
+          "name": "WallObject_48",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 49,
+          "name": "WallObject_49",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Wall_7",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 25,
+          "name": "WallObject_25",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 34,
+          "name": "WallObject_34",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "InclinedPlane_10",
+      "type": "inclined_plane",
+      "level": 1,
+      "relation_to_parent": "unknown_relation",
+      "children": [
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Wall_8",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 40,
+          "name": "WallObject_40",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 44,
+          "name": "WallObject_44",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Wall_9",
+      "type": "wall",
+      "level": 1,
+      "relation_to_parent": "part_of_scene",
+      "children": [
+        {
+          "id": 20,
+          "name": "WallObject_20",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 26,
+          "name": "WallObject_26",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 28,
+          "name": "WallObject_28",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        },
+        {
+          "id": 31,
+          "name": "WallObject_31",
+          "type": "wall_object",
+          "level": 2,
+          "relation_to_parent": "attached_to_wall",
+          "children": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "UnclassifiedObject_13",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 14,
+      "name": "UnclassifiedObject_14",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 15,
+      "name": "UnclassifiedObject_15",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 16,
+      "name": "UnclassifiedObject_16",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 17,
+      "name": "UnclassifiedObject_17",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 18,
+      "name": "UnclassifiedObject_18",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 21,
+      "name": "UnclassifiedObject_21",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 22,
+      "name": "UnclassifiedObject_22",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 23,
+      "name": "UnclassifiedObject_23",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 24,
+      "name": "UnclassifiedObject_24",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 27,
+      "name": "UnclassifiedObject_27",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 29,
+      "name": "UnclassifiedObject_29",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 30,
+      "name": "UnclassifiedObject_30",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 32,
+      "name": "UnclassifiedObject_32",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 33,
+      "name": "UnclassifiedObject_33",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 35,
+      "name": "UnclassifiedObject_35",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 36,
+      "name": "UnclassifiedObject_36",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 38,
+      "name": "UnclassifiedObject_38",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 39,
+      "name": "UnclassifiedObject_39",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 41,
+      "name": "UnclassifiedObject_41",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 47,
+      "name": "UnclassifiedObject_47",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
+      ]
+    },
+    {
+      "id": 50,
+      "name": "UnclassifiedObject_50",
+      "type": "object_cluster",
+      "level": 1,
+      "relation_to_parent": "unknown_or_on_floor",
+      "children": [
       ]
     }
   ]

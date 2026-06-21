@@ -4,7 +4,16 @@
 
 Ce projet a pour objectif de transformer un nuage de points 3D en une représentation structurée sous forme de **graphe hiérarchique**.
 
-La version précédente du projet réalisait principalement une segmentation par Region Growing et construisait un graphe d’adjacence entre régions. La nouvelle version évolue vers une approche plus proche de l’objectif final :
+La première version du projet faisait principalement :
+
+```text
+Nuage de points brut
+→ Prétraitement
+→ Region Growing
+→ Graphe d’adjacence des régions
+```
+
+La version actuelle évolue vers une approche plus proche de l’objectif final :
 
 ```text
 Nuage de points brut
@@ -12,7 +21,8 @@ Nuage de points brut
 → Détection automatique de primitives géométriques
 → Classification géométrique approximative
 → Construction d’un graphe hiérarchique sous forme d’arbre
-→ Export JSON et visualisation
+→ Export JSON
+→ Interface Qt simple
 ```
 
 L’idée est de représenter une scène intérieure, par exemple une chambre, une salle ou une classe, sous forme d’arbre :
@@ -30,17 +40,22 @@ Scene / Pièce
 
 Cette version ne fait pas encore de reconnaissance sémantique par deep learning. Elle utilise une **classification géométrique approximative** basée sur les plans, les hauteurs, les normales, les bounding boxes et les relations spatiales.
 
+Le deep learning est prévu comme étape future, après stabilisation de la partie géométrique.
+
 ---
 
 ## Objectifs actuels
 
 Le programme permet actuellement de :
 
-- charger un fichier `.ply` ou `.pcd` ;
+- charger un fichier `.ply` ou `.pcd` avec une interface graphique Qt ;
 - nettoyer le nuage avec plusieurs filtres PCL ;
 - réduire le nombre de points avec `VoxelGrid` ;
 - supprimer les outliers statistiques avec `StatisticalOutlierRemoval` ;
 - supprimer les points isolés avec `RadiusOutlierRemoval` ;
+- exporter le nuage brut ;
+- exporter le nuage après prétraitement ;
+- comparer visuellement le nuage brut et le nuage prétraité ;
 - extraire automatiquement les plans principaux avec RANSAC ;
 - détecter des clusters dans les points restants ;
 - classifier approximativement les primitives détectées ;
@@ -48,6 +63,7 @@ Le programme permet actuellement de :
 - exporter la liste des primitives ;
 - exporter un graphe hiérarchique sous forme d’arbre JSON ;
 - exporter un nuage coloré par primitives ;
+- afficher les logs du traitement dans l’interface ;
 - mesurer le temps d’exécution de chaque étape.
 
 ---
@@ -56,13 +72,14 @@ Le programme permet actuellement de :
 
 - C++17
 - CMake
+- Qt5 Widgets
 - PCL
 - CGAL
 - Eigen
 
 ---
 
-## Rôle de PCL et CGAL
+## Rôle de PCL, CGAL et Qt
 
 ### PCL
 
@@ -73,12 +90,18 @@ PCL est utilisé pour la partie traitement pratique du nuage de points :
 - extraction de plans avec RANSAC ;
 - clustering euclidien des points restants ;
 - calcul des centroïdes et bounding boxes ;
-- visualisation du résultat ;
-- export du nuage coloré.
+- export des nuages colorés ;
+- visualisation comparative avec `PCLVisualizer`.
 
 ### CGAL
 
-CGAL est introduit dans la partie géométrique du projet. Dans cette version, il est utilisé pour calculer des distances robustes entre primitives grâce à `CGAL::squared_distance`.
+CGAL est introduit dans la partie géométrique du projet.
+
+Dans cette version, il est utilisé pour calculer des distances géométriques entre primitives grâce à :
+
+```cpp
+CGAL::squared_distance(...)
+```
 
 Cela permet de commencer à intégrer CGAL dans la construction des relations spatiales du graphe hiérarchique.
 
@@ -89,6 +112,20 @@ Cela permet de commencer à intégrer CGAL dans la construction des relations sp
 - la détection de primitives avec Efficient RANSAC ;
 - l’analyse des relations spatiales entre objets.
 
+### Qt
+
+Qt est utilisé pour créer une première interface graphique simple.
+
+Dans cette version, l’interface permet de :
+
+- choisir un fichier `.ply` ou `.pcd` ;
+- lancer le traitement complet ;
+- afficher les logs dans une zone texte ;
+- ouvrir le dossier des résultats ;
+- ouvrir une fenêtre de comparaison visuelle entre le nuage brut et le nuage après prétraitement.
+
+Cette version Qt reste volontairement simple. Les viewers 3D ne sont pas encore intégrés directement dans la fenêtre principale. Une fenêtre PCL séparée est utilisée pour la comparaison visuelle.
+
 ---
 
 ## Dépendances
@@ -98,23 +135,50 @@ Sous Ubuntu ou WSL :
 ```bash
 sudo apt update
 sudo apt install build-essential cmake libpcl-dev libcgal-dev
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+```
+
+Optionnel, mais utile pour certains composants graphiques Qt :
+
+```bash
+sudo apt install libqt5opengl5-dev
 ```
 
 ---
 
 ## Structure du projet
 
+La version actuelle est séparée en plusieurs fichiers :
+
 ```text
 Segmentation_Nuage_Points/
 ├── CMakeLists.txt
 ├── main.cpp
+├── MainWindow.h
+├── MainWindow.cpp
+├── Primitive.h
+├── PointCloudPipeline.h
+├── PointCloudPipeline.cpp
 ├── box2.ply
+├── building.ply
 └── build/
 ```
+
+### Rôle des fichiers
+
+| Fichier | Rôle |
+|---|---|
+| `main.cpp` | Lance l’application Qt |
+| `MainWindow.h` / `MainWindow.cpp` | Gère l’interface graphique |
+| `Primitive.h` | Définit la structure d’une primitive |
+| `PointCloudPipeline.h` / `PointCloudPipeline.cpp` | Contient tout le pipeline PCL / CGAL |
+| `CMakeLists.txt` | Configure la compilation avec Qt, PCL et CGAL |
 
 Après exécution, le dossier `build/` peut contenir :
 
 ```text
+raw_cloud.ply
+preprocessed_cloud.ply
 primitives_colored.ply
 primitives.json
 hierarchy.json
@@ -134,23 +198,89 @@ cmake ..
 make -j4
 ```
 
-Après compilation, un exécutable nommé `seg` est généré dans le dossier `build`.
+Après compilation, un exécutable nommé `seg_gui` est généré dans le dossier `build`.
 
 ---
 
 ## Exécution
 
-Si le fichier `box2.ply` se trouve dans le dossier racine du projet :
+Depuis le dossier `build` :
 
 ```bash
-./seg ../box2.ply
+./seg_gui
 ```
 
-Utilisation générale :
+Une fenêtre Qt s’ouvre.
 
-```bash
-./seg chemin/vers/fichier.ply
+Étapes d’utilisation :
+
+1. cliquer sur **Charger un fichier .PLY / .PCD** ;
+2. choisir un fichier, par exemple `box2.ply` ou `building.ply` ;
+3. cliquer sur **Lancer le traitement** ;
+4. lire les logs affichés dans l’interface ;
+5. cliquer sur **Comparer brut / prétraité** pour visualiser la différence ;
+6. ouvrir le dossier des résultats si nécessaire.
+
+---
+
+## Interface graphique actuelle
+
+L’IHM actuelle contient les boutons suivants :
+
+```text
+[Charger un fichier .PLY / .PCD]
+[Lancer le traitement]
+[Comparer brut / prétraité]
+[Ouvrir le dossier des résultats]
 ```
+
+### Charger un fichier
+
+Ce bouton ouvre un `QFileDialog` permettant de choisir un fichier :
+
+```text
+.ply
+.pcd
+```
+
+### Lancer le traitement
+
+Ce bouton lance automatiquement le pipeline complet :
+
+```text
+Chargement
+→ Prétraitement
+→ Extraction des plans
+→ Clustering
+→ Classification
+→ Graphe hiérarchique
+→ Exports
+```
+
+Les logs sont affichés dans la fenêtre Qt.
+
+### Comparer brut / prétraité
+
+Ce bouton ouvre une fenêtre `PCLVisualizer` avec deux vues :
+
+```text
+Vue gauche  : nuage brut
+Vue droite  : nuage après prétraitement
+```
+
+Cela permet de vérifier visuellement l’effet du nettoyage.
+
+### Ouvrir le dossier des résultats
+
+Ce bouton ouvre le dossier courant, généralement le dossier `build`, où les fichiers de sortie sont générés.
+
+---
+
+## Pipeline implémenté
+
+### 1. Chargement du nuage
+
+Le programme charge le fichier choisi dans l’interface.
 
 Formats supportés :
 
@@ -159,14 +289,6 @@ Formats supportés :
 .pcd
 ```
 
----
-
-## Pipeline implémenté
-
-### 1. Chargement du nuage
-
-Le programme charge le fichier passé en argument.
-
 Fonctions utilisées :
 
 ```cpp
@@ -174,15 +296,27 @@ pcl::io::loadPLYFile<PointT>(...)
 pcl::io::loadPCDFile<PointT>(...)
 ```
 
-Si le fichier n’est pas au format `.ply` ou `.pcd`, le programme affiche une erreur.
+Si le fichier n’est pas au bon format ou ne peut pas être lu, le pipeline s’arrête et affiche une erreur dans les logs.
 
 ---
 
-### 2. Prétraitement du nuage
+### 2. Export du nuage brut
+
+Après chargement, le programme sauvegarde une copie du nuage brut :
+
+```text
+raw_cloud.ply
+```
+
+Ce fichier sert à comparer visuellement l’état initial du nuage avec le résultat du prétraitement.
+
+---
+
+### 3. Prétraitement du nuage
 
 Le prétraitement est composé de trois étapes.
 
-#### 2.1 VoxelGrid
+#### 3.1 VoxelGrid
 
 Le filtre `VoxelGrid` réduit le nombre de points.
 
@@ -194,37 +328,35 @@ Objectifs :
 - alléger le nuage ;
 - conserver la structure globale de la scène.
 
-Paramètre actuel :
-
-```cpp
-const double voxel_size = 0.05;
-```
-
-#### 2.2 StatisticalOutlierRemoval
+#### 3.2 StatisticalOutlierRemoval
 
 Le filtre `StatisticalOutlierRemoval` supprime les points statistiquement aberrants.
 
-Paramètres actuels :
+Il analyse la distance moyenne entre un point et ses voisins. Les points trop éloignés statistiquement sont supprimés.
 
-```cpp
-const int sor_mean_k = 30;
-const double sor_stddev = 1.0;
-```
+#### 3.3 RadiusOutlierRemoval
 
-#### 2.3 RadiusOutlierRemoval
+Le filtre `RadiusOutlierRemoval` supprime les points isolés.
 
-Le filtre `RadiusOutlierRemoval` supprime les points isolés qui n’ont pas assez de voisins dans un rayon donné.
+Principe : un point est conservé seulement s’il possède un nombre suffisant de voisins dans un rayon donné.
 
-Paramètres actuels :
-
-```cpp
-const double ror_radius = 0.15;
-const int ror_min_neighbors = 5;
-```
+Attention : ce paramètre dépend fortement de la densité du nuage. Un rayon trop petit peut supprimer trop de points dans un nuage clairsemé.
 
 ---
 
-### 3. Extraction des plans avec RANSAC
+### 4. Export du nuage prétraité
+
+Après le prétraitement, le programme sauvegarde :
+
+```text
+preprocessed_cloud.ply
+```
+
+Ce fichier permet de visualiser directement le nuage nettoyé.
+
+---
+
+### 5. Extraction des plans avec RANSAC
 
 La fonction principale est :
 
@@ -232,7 +364,7 @@ La fonction principale est :
 ExtractPlanesRANSAC(...)
 ```
 
-Cette fonction détecte automatiquement les plans dominants du nuage.
+Elle détecte automatiquement les plans dominants du nuage.
 
 Principe :
 
@@ -254,19 +386,11 @@ Les plans détectés peuvent correspondre à :
 - une fenêtre ;
 - un tableau.
 
-Paramètres actuels :
-
-```cpp
-const int max_planes = 12;
-const int min_plane_points = 300;
-const double plane_distance_threshold = 0.03;
-```
-
 Chaque plan détecté est stocké sous forme de `Primitive`.
 
 ---
 
-### 4. Clustering des points restants
+### 6. Clustering des points restants
 
 Après l’extraction des plans, certains points restent dans le nuage.
 
@@ -286,19 +410,11 @@ ExtractClusters(...)
 
 Elle applique un clustering euclidien sur les points restants.
 
-Paramètres actuels :
-
-```cpp
-const double cluster_tolerance = 0.15;
-const int min_cluster_size = 80;
-const int max_cluster_size = 30000;
-```
-
 Chaque cluster détecté devient aussi une `Primitive`.
 
 ---
 
-### 5. Structure `Primitive`
+### 7. Structure `Primitive`
 
 Chaque élément détecté est représenté par une structure `Primitive`.
 
@@ -331,7 +447,7 @@ unknown
 
 ---
 
-### 6. Classification géométrique approximative
+### 8. Classification géométrique approximative
 
 La classification est réalisée par la fonction :
 
@@ -381,7 +497,7 @@ Cette classification reste approximative. Elle prépare une future intégration 
 
 ---
 
-### 7. Construction du graphe hiérarchique
+### 9. Construction du graphe hiérarchique
 
 La fonction principale est :
 
@@ -419,12 +535,28 @@ Scene
 
 ## Résultats générés
 
-Après exécution, le programme génère trois fichiers principaux.
+Après exécution, le programme génère les fichiers suivants :
 
 ```text
+raw_cloud.ply
+preprocessed_cloud.ply
 primitives_colored.ply
 primitives.json
 hierarchy.json
+```
+
+### raw_cloud.ply
+
+Copie du nuage brut chargé.
+
+### preprocessed_cloud.ply
+
+Nuage après :
+
+```text
+VoxelGrid
+StatisticalOutlierRemoval
+RadiusOutlierRemoval
 ```
 
 ### primitives_colored.ply
@@ -536,20 +668,34 @@ Ces mesures permettent de comparer les performances et de justifier les choix te
 
 ## Paramètres importants
 
+Les paramètres principaux se trouvent dans :
+
+```text
+PointCloudPipeline.cpp
+```
+
+Dans la fonction :
+
 ```cpp
-const double voxel_size = 0.05;
+PipelineResult RunPipelineInternal(const std::string& filename)
+```
+
+Bloc actuel :
+
+```cpp
+const double voxel_size = 0.02;
 
 const int sor_mean_k = 30;
 const double sor_stddev = 1.0;
 
-const double ror_radius = 0.15;
-const int ror_min_neighbors = 5;
+const double ror_radius = 0.35;
+const int ror_min_neighbors = 3;
 
 const int max_planes = 12;
 const int min_plane_points = 300;
-const double plane_distance_threshold = 0.03;
+const double plane_distance_threshold = 0.05;
 
-const double cluster_tolerance = 0.15;
+const double cluster_tolerance = 0.30;
 const int min_cluster_size = 80;
 const int max_cluster_size = 30000;
 ```
@@ -570,6 +716,50 @@ const int max_cluster_size = 30000;
 
 ---
 
+## Exemples de profils de paramètres
+
+### Profil pour un nuage dense comme `box2.ply`
+
+```cpp
+const double voxel_size = 0.05;
+
+const int sor_mean_k = 30;
+const double sor_stddev = 1.0;
+
+const double ror_radius = 0.15;
+const int ror_min_neighbors = 5;
+
+const int max_planes = 12;
+const int min_plane_points = 300;
+const double plane_distance_threshold = 0.03;
+
+const double cluster_tolerance = 0.15;
+const int min_cluster_size = 80;
+const int max_cluster_size = 30000;
+```
+
+### Profil pour un nuage moins dense comme `building.ply`
+
+```cpp
+const double voxel_size = 0.02;
+
+const int sor_mean_k = 20;
+const double sor_stddev = 1.5;
+
+const double ror_radius = 0.35;
+const int ror_min_neighbors = 3;
+
+const int max_planes = 12;
+const int min_plane_points = 300;
+const double plane_distance_threshold = 0.05;
+
+const double cluster_tolerance = 0.30;
+const int min_cluster_size = 80;
+const int max_cluster_size = 30000;
+```
+
+---
+
 ## Différence avec l’ancienne version
 
 Ancienne version :
@@ -587,8 +777,11 @@ Nuage brut
 Nouvelle version :
 
 ```text
-Nuage brut
+Interface Qt
+→ Chargement fichier
 → Prétraitement complet
+→ Export brut / prétraité
+→ Comparaison visuelle brut / prétraité
 → RANSAC plans
 → Clustering des restes
 → Classification géométrique
@@ -604,7 +797,7 @@ La nouvelle version se rapproche davantage de l’objectif final du projet : obt
 
 ## Limites actuelles
 
-La version actuelle reste une première version géométrique. Elle présente plusieurs limites :
+La version actuelle reste une première version géométrique et graphique simple. Elle présente plusieurs limites :
 
 - la classification est approximative ;
 - les objets comme chaise, table, fenêtre ou cadre ne sont pas encore reconnus sémantiquement avec certitude ;
@@ -612,7 +805,9 @@ La version actuelle reste une première version géométrique. Elle présente pl
 - les relations parent/enfant sont basées sur des règles géométriques simples ;
 - le graphe hiérarchique peut nécessiter des ajustements selon le type de scène ;
 - le deep learning n’est pas encore intégré ;
-- CGAL est utilisé pour les distances géométriques, mais son module Efficient RANSAC n’est pas encore intégré.
+- CGAL est utilisé pour les distances géométriques, mais son module Efficient RANSAC n’est pas encore intégré ;
+- les visualisations 3D ne sont pas encore intégrées directement dans la fenêtre Qt principale ;
+- la comparaison brut/prétraité ouvre une fenêtre PCL séparée.
 
 ---
 
@@ -622,29 +817,39 @@ Les prochaines étapes prévues sont :
 
 1. améliorer la détection de primitives ;
 2. tester le pipeline sur plusieurs scènes `.ply` ;
-3. améliorer les règles de classification géométrique ;
-4. mieux distinguer les murs, le sol, le plafond et les supports ;
-5. améliorer les relations spatiales :
+3. ajouter des profils de paramètres selon la densité du nuage ;
+4. améliorer les règles de classification géométrique ;
+5. mieux distinguer les murs, le sol, le plafond et les supports ;
+6. améliorer les relations spatiales :
    - `posed_on` ;
    - `attached_to_wall` ;
    - `part_of_scene` ;
    - `near_to` ;
    - `inside` ;
-6. intégrer plus fortement CGAL, notamment pour Efficient RANSAC ;
-7. comparer cette approche géométrique avec des méthodes deep learning ;
-8. étudier l’intégration du deep learning pour améliorer la classification sémantique.
+7. intégrer plus fortement CGAL, notamment pour Efficient RANSAC ;
+8. intégrer les viewers 3D directement dans Qt ;
+9. ajouter trois vues dans une même fenêtre :
+   - nuage brut ;
+   - nuage prétraité ;
+   - primitives détectées ;
+10. comparer cette approche géométrique avec des méthodes deep learning ;
+11. étudier l’intégration du deep learning pour améliorer la classification sémantique.
 
 ---
 
 ## État actuel
 
-La version actuelle fournit une première base fonctionnelle pour construire automatiquement un graphe hiérarchique à partir d’un nuage de points :
+La version actuelle fournit une première application graphique simple permettant de construire automatiquement un graphe hiérarchique à partir d’un nuage de points :
 
 ```text
-Chargement .ply/.pcd
+Interface Qt
+→ Chargement .ply/.pcd
 → VoxelGrid
 → StatisticalOutlierRemoval
 → RadiusOutlierRemoval
+→ Export raw_cloud.ply
+→ Export preprocessed_cloud.ply
+→ Comparaison visuelle brut/prétraité
 → Extraction de plans RANSAC
 → Clustering des points restants
 → Classification géométrique approximative
@@ -654,4 +859,4 @@ Chargement .ply/.pcd
 → Export primitives_colored.ply
 ```
 
-Cette version constitue la base géométrique du projet avant l’intégration future du deep learning.
+Cette version constitue la base géométrique et graphique du projet avant l’intégration future du deep learning.

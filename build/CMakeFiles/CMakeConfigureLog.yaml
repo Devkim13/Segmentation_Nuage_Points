@@ -2398,3 +2398,745 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ed6c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1ed6c.dir/build.make CMakeFiles/cmTC_1ed6c.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI »
+        Building C object CMakeFiles/cmTC_1ed6c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_1ed6c.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI/test_mpi.c
+        Linking C executable cmTC_1ed6c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed6c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_1ed6c.dir/test_mpi.c.o -o cmTC_1ed6c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-zTCzFI »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5c9df/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5c9df.dir/build.make CMakeFiles/cmTC_5c9df.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4 »
+        Building C object CMakeFiles/cmTC_5c9df.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_5c9df.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4/test_mpi.c
+        Linking C executable cmTC_5c9df
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c9df.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_5c9df.dir/test_mpi.c.o -o cmTC_5c9df  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-TFS9X4 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83876/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_83876.dir/build.make CMakeFiles/cmTC_83876.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW »
+        Building C object CMakeFiles/cmTC_83876.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_83876.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW/test_mpi.c
+        Linking C executable cmTC_83876
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83876.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_83876.dir/test_mpi.c.o -o cmTC_83876  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uh9LFW »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_854f7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_854f7.dir/build.make CMakeFiles/cmTC_854f7.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA »
+        Building C object CMakeFiles/cmTC_854f7.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_854f7.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA/test_mpi.c
+        Linking C executable cmTC_854f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_854f7.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_854f7.dir/test_mpi.c.o -o cmTC_854f7  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-YbzUCA »
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32099/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32099.dir/build.make CMakeFiles/cmTC_32099.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36 »
+        Building C object CMakeFiles/cmTC_32099.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_32099.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36/test_mpi.c
+        Linking C executable cmTC_32099
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32099.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_32099.dir/test_mpi.c.o -o cmTC_32099  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-DJsY36 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b612d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b612d.dir/build.make CMakeFiles/cmTC_b612d.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT »
+        Building C object CMakeFiles/cmTC_b612d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_b612d.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT/test_mpi.c
+        Linking C executable cmTC_b612d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b612d.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_b612d.dir/test_mpi.c.o -o cmTC_b612d  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8iwsrT »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9a242/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9a242.dir/build.make CMakeFiles/cmTC_9a242.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr »
+        Building C object CMakeFiles/cmTC_9a242.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_9a242.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr/test_mpi.c
+        Linking C executable cmTC_9a242
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a242.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_9a242.dir/test_mpi.c.o -o cmTC_9a242  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-uBuLCr »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f80b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4f80b.dir/build.make CMakeFiles/cmTC_4f80b.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ »
+        Building C object CMakeFiles/cmTC_4f80b.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_4f80b.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ/test_mpi.c
+        Linking C executable cmTC_4f80b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f80b.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_4f80b.dir/test_mpi.c.o -o cmTC_4f80b  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-vRepNQ »
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_300e2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_300e2.dir/build.make CMakeFiles/cmTC_300e2.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH »
+        Building C object CMakeFiles/cmTC_300e2.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_300e2.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH/test_mpi.c
+        Linking C executable cmTC_300e2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_300e2.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_300e2.dir/test_mpi.c.o -o cmTC_300e2  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-PVmjOH »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3437/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f3437.dir/build.make CMakeFiles/cmTC_f3437.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP »
+        Building C object CMakeFiles/cmTC_f3437.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_f3437.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP/test_mpi.c
+        Linking C executable cmTC_f3437
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3437.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_f3437.dir/test_mpi.c.o -o cmTC_f3437  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-bJ6lvP »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_edf2d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_edf2d.dir/build.make CMakeFiles/cmTC_edf2d.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O »
+        Building C object CMakeFiles/cmTC_edf2d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_edf2d.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O/test_mpi.c
+        Linking C executable cmTC_edf2d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edf2d.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_edf2d.dir/test_mpi.c.o -o cmTC_edf2d  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-enJP0O »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "CMakeLists.txt:8 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a42a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2a42a.dir/build.make CMakeFiles/cmTC_2a42a.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM »
+        Building C object CMakeFiles/cmTC_2a42a.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_2a42a.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM/test_mpi.c
+        Linking C executable cmTC_2a42a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a42a.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_2a42a.dir/test_mpi.c.o -o cmTC_2a42a  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-pnjNwM »
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2ece8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2ece8.dir/build.make CMakeFiles/cmTC_2ece8.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2 »
+        Building C object CMakeFiles/cmTC_2ece8.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_2ece8.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2/test_mpi.c
+        Linking C executable cmTC_2ece8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ece8.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_2ece8.dir/test_mpi.c.o -o cmTC_2ece8  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-qBfFT2 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e55ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e55ee.dir/build.make CMakeFiles/cmTC_e55ee.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr »
+        Building C object CMakeFiles/cmTC_e55ee.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_e55ee.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr/test_mpi.c
+        Linking C executable cmTC_e55ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e55ee.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_e55ee.dir/test_mpi.c.o -o cmTC_e55ee  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8QYHfr »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dc0f0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dc0f0.dir/build.make CMakeFiles/cmTC_dc0f0.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI »
+        Building C object CMakeFiles/cmTC_dc0f0.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_dc0f0.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI/test_mpi.c
+        Linking C executable cmTC_dc0f0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc0f0.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_dc0f0.dir/test_mpi.c.o -o cmTC_dc0f0  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-dY7tCI »
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d42b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d42b3.dir/build.make CMakeFiles/cmTC_d42b3.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs »
+        Building C object CMakeFiles/cmTC_d42b3.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d42b3.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs/test_mpi.c
+        Linking C executable cmTC_d42b3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d42b3.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_d42b3.dir/test_mpi.c.o -o cmTC_d42b3  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-KUfzOs »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccb72/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccb72.dir/build.make CMakeFiles/cmTC_ccb72.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5 »
+        Building C object CMakeFiles/cmTC_ccb72.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_ccb72.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5/test_mpi.c
+        Linking C executable cmTC_ccb72
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccb72.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_ccb72.dir/test_mpi.c.o -o cmTC_ccb72  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-7LJdP5 »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6b0d4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6b0d4.dir/build.make CMakeFiles/cmTC_6b0d4.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl »
+        Building C object CMakeFiles/cmTC_6b0d4.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_6b0d4.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl/test_mpi.c
+        Linking C executable cmTC_6b0d4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b0d4.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_6b0d4.dir/test_mpi.c.o -o cmTC_6b0d4  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-8M6ztl »
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)"
+      - "CMakeLists.txt:14 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH"
+      binary: "/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_99076/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_99076.dir/build.make CMakeFiles/cmTC_99076.dir/build
+        gmake[1] : on entre dans le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH »
+        Building C object CMakeFiles/cmTC_99076.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_99076.dir/test_mpi.c.o -c /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH/test_mpi.c
+        Linking C executable cmTC_99076
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99076.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_99076.dir/test_mpi.c.o -o cmTC_99076  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1] : on quitte le répertoire « /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/CMakeScratch/TryCompile-iNdEHH »
+        
+      exitCode: 0
+...

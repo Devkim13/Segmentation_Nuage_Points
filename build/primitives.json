@@ -2,44 +2,44 @@
   "primitives": [
     {
       "id": 1,
-      "name": "Floor",
-      "type": "floor",
+      "name": "InclinedPlane_1",
+      "type": "inclined_plane",
       "level": 1,
       "parent_id": 0,
-      "relation_to_parent": "part_of_scene",
-      "number_of_points": 1104,
-      "centroid": [2.67597, 1.69284, 1.69404],
+      "relation_to_parent": "unknown_relation",
+      "number_of_points": 7140,
+      "centroid": [-1.76855, -1.73636, 12.9957],
       "bbox": {
-        "min": [0.779422, 1.03346, 1.30861],
-        "max": [3.87829, 2.40159, 2.27973]
+        "min": [-6.73408, -32.1359, 9.81952],
+        "max": [1.01095, 21.5898, 14.7376]
       }
     },
     {
       "id": 2,
+      "name": "InclinedPlane_2",
+      "type": "inclined_plane",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_relation",
+      "number_of_points": 8211,
+      "centroid": [3.61555, -3.81692, 12.9943],
+      "bbox": {
+        "min": [0.775678, -32.0827, 10.5984],
+        "max": [7.48079, 21.5386, 14.761]
+      }
+    },
+    {
+      "id": 3,
       "name": "Wall_1",
       "type": "wall",
       "level": 1,
       "parent_id": 0,
       "relation_to_parent": "part_of_scene",
-      "number_of_points": 660,
-      "centroid": [2.07948, 2.39848, 1.40848],
+      "number_of_points": 5604,
+      "centroid": [-5.52579, -6.57579, 4.0017],
       "bbox": {
-        "min": [0.725586, 2.36202, 0.772041],
-        "max": [3.47215, 2.41805, 2.30961]
-      }
-    },
-    {
-      "id": 3,
-      "name": "Support_3",
-      "type": "horizontal_support",
-      "level": 2,
-      "parent_id": 1,
-      "relation_to_parent": "posed_on",
-      "number_of_points": 398,
-      "centroid": [1.11485, 1.59252, 2.26886],
-      "bbox": {
-        "min": [0.623997, 0.866472, 2.17244],
-        "max": [1.42699, 2.32831, 2.41823]
+        "min": [-5.77144, -32.6318, -3.15097],
+        "max": [-5.2767, 21.9666, 13.9924]
       }
     },
     {
@@ -49,53 +49,655 @@
       "level": 1,
       "parent_id": 0,
       "relation_to_parent": "part_of_scene",
-      "number_of_points": 360,
-      "centroid": [1.71452, 1.74666, 1.65823],
+      "number_of_points": 4643,
+      "centroid": [-5.41307, 3.42831, 3.00641],
       "bbox": {
-        "min": [1.62374, 1.07943, 1.37394],
-        "max": [1.8133, 2.3311, 1.93267]
+        "min": [-5.59678, -32.6279, -3.13604],
+        "max": [-5.1481, 22.1004, 13.9336]
       }
     },
     {
       "id": 5,
-      "name": "UnclassifiedObject_5",
-      "type": "object_cluster",
-      "level": 2,
-      "parent_id": 1,
-      "relation_to_parent": "unknown_or_on_floor",
-      "number_of_points": 923,
-      "centroid": [2.69252, 2.00258, 1.25079],
+      "name": "Wall_3",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 4206,
+      "centroid": [-5.54969, -7.80304, 4.98471],
       "bbox": {
-        "min": [2.08203, 1.5442, 0.88944],
-        "max": [3.8545, 2.3713, 1.65234]
+        "min": [-5.64968, -32.5017, -3.14944],
+        "max": [-5.44345, 22.0982, 13.9775]
       }
     },
     {
       "id": 6,
-      "name": "WallObject_6",
-      "type": "wall_object",
-      "level": 2,
-      "parent_id": 4,
-      "relation_to_parent": "attached_to_wall",
-      "number_of_points": 249,
-      "centroid": [1.45336, 1.90316, 1.20421],
+      "name": "Wall_4",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 2965,
+      "centroid": [0.996371, 21.5861, 4.2041],
       "bbox": {
-        "min": [1.32225, 1.32178, 0.921749],
-        "max": [1.57964, 2.37062, 1.61236]
+        "min": [-5.97411, 21.4773, -3.10171],
+        "max": [7.87034, 21.7017, 11.3528]
       }
     },
     {
       "id": 7,
-      "name": "UnclassifiedObject_7",
+      "name": "Wall_5",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 2857,
+      "centroid": [7.26306, -5.96988, 7.72762],
+      "bbox": {
+        "min": [7.15083, -32.5737, -3.14102],
+        "max": [7.37521, 21.9983, 11.3427]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Wall_6",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 2149,
+      "centroid": [-5.09422, -2.90218, 4.64163],
+      "bbox": {
+        "min": [-5.4651, -32.6359, -1.88229],
+        "max": [-4.49962, 22.0998, 13.9422]
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wall_7",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 2174,
+      "centroid": [0.475202, -32.0693, 3.14687],
+      "bbox": {
+        "min": [-7.12309, -32.2416, -2.77627],
+        "max": [7.74467, -31.8452, 11.343]
+      }
+    },
+    {
+      "id": 10,
+      "name": "InclinedPlane_10",
+      "type": "inclined_plane",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_relation",
+      "number_of_points": 3364,
+      "centroid": [-2.20494, -5.76997, 12.796],
+      "bbox": {
+        "min": [-6.73793, -30.8846, 9.98392],
+        "max": [0.920385, 21.5878, 14.7372]
+      }
+    },
+    {
+      "id": 11,
+      "name": "Wall_8",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 1676,
+      "centroid": [-6.7384, -6.45373, 2.50101],
+      "bbox": {
+        "min": [-6.86953, -32.0232, -2.97906],
+        "max": [-6.6412, 1.03937, 13.8946]
+      }
+    },
+    {
+      "id": 12,
+      "name": "Wall_9",
+      "type": "wall",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "part_of_scene",
+      "number_of_points": 1722,
+      "centroid": [-5.17964, -6.27225, 4.44004],
+      "bbox": {
+        "min": [-6.0265, -32.5146, -3.15008],
+        "max": [-4.23245, 22.0503, 13.9742]
+      }
+    },
+    {
+      "id": 13,
+      "name": "UnclassifiedObject_13",
       "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 18345,
+      "centroid": [0.698799, -20.4033, 6.56612],
+      "bbox": {
+        "min": [-7.15479, -32.6452, -3.15146],
+        "max": [8.33086, 13.3373, 14.6072]
+      }
+    },
+    {
+      "id": 14,
+      "name": "UnclassifiedObject_14",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 6709,
+      "centroid": [4.13314, 18.8862, 4.21391],
+      "bbox": {
+        "min": [-5.23028, 10.576, -3.14666],
+        "max": [8.25046, 22.1844, 8.86508]
+      }
+    },
+    {
+      "id": 15,
+      "name": "UnclassifiedObject_15",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 4431,
+      "centroid": [2.52229, -5.43853, 0.20939],
+      "bbox": {
+        "min": [-5.42039, -9.86, -1.91775],
+        "max": [7.34223, -0.348276, 2.06217]
+      }
+    },
+    {
+      "id": 16,
+      "name": "UnclassifiedObject_16",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 2872,
+      "centroid": [-3.26307, 16.6192, 8.08267],
+      "bbox": {
+        "min": [-6.10238, 3.45032, 2.24188],
+        "max": [7.8742, 22.1219, 10.5595]
+      }
+    },
+    {
+      "id": 17,
+      "name": "UnclassifiedObject_17",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 1857,
+      "centroid": [-6.31619, -19.8364, -2.20704],
+      "bbox": {
+        "min": [-7.37406, -32.4172, -3.01175],
+        "max": [-5.5736, -7.93394, 1.48325]
+      }
+    },
+    {
+      "id": 18,
+      "name": "UnclassifiedObject_18",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 1398,
+      "centroid": [1.03953, 19.3432, 12.1833],
+      "bbox": {
+        "min": [-4.33476, 15.4038, 11.1075],
+        "max": [7.4706, 21.6239, 14.5847]
+      }
+    },
+    {
+      "id": 19,
+      "name": "WallObject_19",
+      "type": "wall_object",
       "level": 2,
-      "parent_id": 1,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 1273,
+      "centroid": [-5.11467, 7.69944, 6.05243],
+      "bbox": {
+        "min": [-5.67714, 1.69133, 2.95026],
+        "max": [-4.36942, 13.2228, 8.94403]
+      }
+    },
+    {
+      "id": 20,
+      "name": "WallObject_20",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 12,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 1131,
+      "centroid": [-4.16148, -4.52233, 13.1691],
+      "bbox": {
+        "min": [-6.96052, -8.29603, 11.5191],
+        "max": [-0.523991, -0.149952, 14.0255]
+      }
+    },
+    {
+      "id": 21,
+      "name": "UnclassifiedObject_21",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 552,
+      "centroid": [-6.12274, -5.21683, -0.26289],
+      "bbox": {
+        "min": [-6.9306, -6.42916, -2.03494],
+        "max": [-5.65908, -4.27722, 1.48462]
+      }
+    },
+    {
+      "id": 22,
+      "name": "UnclassifiedObject_22",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 328,
+      "centroid": [5.93463, -15.8161, 13.073],
+      "bbox": {
+        "min": [3.18261, -17.9647, 11.5121],
+        "max": [6.65043, -14.5009, 14.2179]
+      }
+    },
+    {
+      "id": 23,
+      "name": "UnclassifiedObject_23",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 312,
+      "centroid": [-0.81958, 3.87884, -1.69232],
+      "bbox": {
+        "min": [-2.60456, 2.0813, -1.77072],
+        "max": [1.20988, 5.88981, -0.830289]
+      }
+    },
+    {
+      "id": 24,
+      "name": "UnclassifiedObject_24",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 306,
+      "centroid": [-6.09343, -1.38764, -0.360987],
+      "bbox": {
+        "min": [-6.87898, -2.51999, -1.93441],
+        "max": [-5.65602, -0.62529, 1.5221]
+      }
+    },
+    {
+      "id": 25,
+      "name": "WallObject_25",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 9,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 303,
+      "centroid": [-0.737497, -32.2711, -2.42279],
+      "bbox": {
+        "min": [-5.35346, -32.5043, -2.89196],
+        "max": [5.28084, -32.0536, -1.84695]
+      }
+    },
+    {
+      "id": 26,
+      "name": "WallObject_26",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 12,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 303,
+      "centroid": [-5.06385, -17.504, 6.32447],
+      "bbox": {
+        "min": [-5.47252, -19.2755, 4.37253],
+        "max": [-4.43103, -15.9052, 8.43598]
+      }
+    },
+    {
+      "id": 27,
+      "name": "UnclassifiedObject_27",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 291,
+      "centroid": [5.98743, -2.94032, 3.50734],
+      "bbox": {
+        "min": [1.7478, -4.21154, 2.6341],
+        "max": [6.88006, -1.59396, 5.61423]
+      }
+    },
+    {
+      "id": 28,
+      "name": "WallObject_28",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 12,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 286,
+      "centroid": [-5.06171, -21.0924, 6.24823],
+      "bbox": {
+        "min": [-5.37942, -22.6014, 4.21555],
+        "max": [-4.50776, -19.6631, 8.45352]
+      }
+    },
+    {
+      "id": 29,
+      "name": "UnclassifiedObject_29",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 273,
+      "centroid": [6.30933, -7.53593, 3.77938],
+      "bbox": {
+        "min": [4.74576, -8.90612, 2.64618],
+        "max": [6.66705, -5.99205, 5.56293]
+      }
+    },
+    {
+      "id": 30,
+      "name": "UnclassifiedObject_30",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 271,
+      "centroid": [4.4877, -17.1441, 2.72525],
+      "bbox": {
+        "min": [1.75389, -18.5187, 2.65442],
+        "max": [6.8205, -15.862, 3.70459]
+      }
+    },
+    {
+      "id": 31,
+      "name": "WallObject_31",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 12,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 266,
+      "centroid": [-5.04572, -24.9104, 6.10329],
+      "bbox": {
+        "min": [-5.44957, -26.0607, 4.19663],
+        "max": [-4.4448, -23.4981, 8.39069]
+      }
+    },
+    {
+      "id": 32,
+      "name": "UnclassifiedObject_32",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 231,
+      "centroid": [0.282431, 21.1579, -0.220851],
+      "bbox": {
+        "min": [-1.60674, 20.4164, -1.75876],
+        "max": [1.64665, 21.5878, 1.46182]
+      }
+    },
+    {
+      "id": 33,
+      "name": "UnclassifiedObject_33",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 211,
+      "centroid": [0.391517, 14.4421, -1.73292],
+      "bbox": {
+        "min": [-1.51543, 11.5173, -1.77093],
+        "max": [2.60263, 17.806, -1.70404]
+      }
+    },
+    {
+      "id": 34,
+      "name": "WallObject_34",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 9,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 160,
+      "centroid": [-2.51428, -31.9149, 0.166377],
+      "bbox": {
+        "min": [-3.37711, -32.175, -1.38983],
+        "max": [-1.70147, -31.5914, 1.78806]
+      }
+    },
+    {
+      "id": 35,
+      "name": "UnclassifiedObject_35",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 157,
+      "centroid": [4.14658, 21.3501, 0.0308013],
+      "bbox": {
+        "min": [3.44856, 20.8358, -1.375],
+        "max": [5.06855, 21.5875, 1.4693]
+      }
+    },
+    {
+      "id": 36,
+      "name": "UnclassifiedObject_36",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 157,
+      "centroid": [5.61086, -20.7856, 2.87027],
+      "bbox": {
+        "min": [3.78609, -21.9142, 2.65845],
+        "max": [6.77062, -19.3056, 3.89002]
+      }
+    },
+    {
+      "id": 37,
+      "name": "WallObject_37",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 148,
+      "centroid": [-5.19206, 3.32424, -0.103356],
+      "bbox": {
+        "min": [-5.40636, 2.45267, -1.18005],
+        "max": [-4.70201, 3.96875, 1.3707]
+      }
+    },
+    {
+      "id": 38,
+      "name": "UnclassifiedObject_38",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
       "relation_to_parent": "unknown_or_on_floor",
       "number_of_points": 147,
-      "centroid": [0.764876, 1.95341, 2.08108],
+      "centroid": [2.65853, 6.47582, -1.75535],
       "bbox": {
-        "min": [0.699219, 1.53296, 1.88831],
-        "max": [0.804952, 2.32628, 2.23884]
+        "min": [1.47798, 5.16985, -1.7771],
+        "max": [3.86484, 7.63092, -1.72796]
+      }
+    },
+    {
+      "id": 39,
+      "name": "UnclassifiedObject_39",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 146,
+      "centroid": [-3.0829, -5.16817, 2.0176],
+      "bbox": {
+        "min": [-3.59397, -6.48674, 1.66928],
+        "max": [-2.44647, -3.77147, 2.04706]
+      }
+    },
+    {
+      "id": 40,
+      "name": "WallObject_40",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 11,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 141,
+      "centroid": [-6.65508, -24.2475, 0.514548],
+      "bbox": {
+        "min": [-7.36858, -25.1126, -0.470151],
+        "max": [-6.01869, -23.7339, 1.41815]
+      }
+    },
+    {
+      "id": 41,
+      "name": "UnclassifiedObject_41",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 140,
+      "centroid": [-2.65972, 21.3802, 0.350179],
+      "bbox": {
+        "min": [-3.38835, 20.904, -1.39209],
+        "max": [-1.77047, 21.5934, 1.45557]
+      }
+    },
+    {
+      "id": 42,
+      "name": "WallObject_42",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 6,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 129,
+      "centroid": [-4.41331, 21.5916, -2.25399],
+      "bbox": {
+        "min": [-5.47818, 20.2536, -3.14923],
+        "max": [-3.0098, 21.8519, -1.03882]
+      }
+    },
+    {
+      "id": 43,
+      "name": "WallObject_43",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 106,
+      "centroid": [-5.1732, 18.1734, 0.249049],
+      "bbox": {
+        "min": [-5.41329, 17.3026, -1.13314],
+        "max": [-4.67807, 18.9984, 1.3573]
+      }
+    },
+    {
+      "id": 44,
+      "name": "WallObject_44",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 11,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 104,
+      "centroid": [-6.95253, -26.0755, 0.972504],
+      "bbox": {
+        "min": [-7.46115, -26.8116, 0.174991],
+        "max": [-6.20831, -25.3956, 1.98514]
+      }
+    },
+    {
+      "id": 45,
+      "name": "WallObject_45",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 6,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 95,
+      "centroid": [0.115569, 21.7128, -2.38802],
+      "bbox": {
+        "min": [-1.15526, 21.2689, -3.14505],
+        "max": [1.89462, 22.041, -1.83892]
+      }
+    },
+    {
+      "id": 46,
+      "name": "WallObject_46",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 93,
+      "centroid": [-5.22495, 10.8578, 0.520895],
+      "bbox": {
+        "min": [-5.53158, 9.94584, -1.40207],
+        "max": [-5.03507, 11.4893, 1.44605]
+      }
+    },
+    {
+      "id": 47,
+      "name": "UnclassifiedObject_47",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 92,
+      "centroid": [-3.4242, -14.2835, -0.427425],
+      "bbox": {
+        "min": [-3.43337, -14.9193, -1.37799],
+        "max": [-3.41545, -13.598, 0.580691]
+      }
+    },
+    {
+      "id": 48,
+      "name": "WallObject_48",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 86,
+      "centroid": [-5.18956, 14.5552, 0.830022],
+      "bbox": {
+        "min": [-5.34177, 13.7853, -0.0791898],
+        "max": [-4.99999, 15.2497, 1.38221]
+      }
+    },
+    {
+      "id": 49,
+      "name": "WallObject_49",
+      "type": "wall_object",
+      "level": 2,
+      "parent_id": 8,
+      "relation_to_parent": "attached_to_wall",
+      "number_of_points": 86,
+      "centroid": [-5.08846, -21.2423, 0.94935],
+      "bbox": {
+        "min": [-5.39202, -22.2247, -0.397245],
+        "max": [-4.85863, -20.2588, 1.81409]
+      }
+    },
+    {
+      "id": 50,
+      "name": "UnclassifiedObject_50",
+      "type": "object_cluster",
+      "level": 1,
+      "parent_id": 0,
+      "relation_to_parent": "unknown_or_on_floor",
+      "number_of_points": 86,
+      "centroid": [1.66193, -30.8265, 0.203889],
+      "bbox": {
+        "min": [0.871971, -30.8339, -1.06311],
+        "max": [2.32222, -30.8185, 1.38986]
       }
     }
   ]

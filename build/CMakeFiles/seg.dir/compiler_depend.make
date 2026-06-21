@@ -1809,7 +1809,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
-  /usr/include/c++/13/bits/deque.tcc \
   /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
@@ -1863,7 +1862,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
-  /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
@@ -1875,7 +1873,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_queue.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_set.h \
@@ -1919,7 +1916,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/c++/13/cxxabi.h \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
-  /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
@@ -1953,7 +1949,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/queue \
   /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
@@ -1992,6 +1987,7 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/dirent.h \
   /usr/include/eigen3/Eigen/Cholesky \
   /usr/include/eigen3/Eigen/Core \
+  /usr/include/eigen3/Eigen/Dense \
   /usr/include/eigen3/Eigen/Eigenvalues \
   /usr/include/eigen3/Eigen/Geometry \
   /usr/include/eigen3/Eigen/Householder \
@@ -2213,11 +2209,13 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/pcl-1.14/pcl/cloud_iterator.h \
   /usr/include/pcl-1.14/pcl/common/centroid.h \
   /usr/include/pcl-1.14/pcl/common/colors.h \
+  /usr/include/pcl-1.14/pcl/common/common.h \
   /usr/include/pcl-1.14/pcl/common/concatenate.h \
   /usr/include/pcl-1.14/pcl/common/copy_point.h \
   /usr/include/pcl-1.14/pcl/common/eigen.h \
   /usr/include/pcl-1.14/pcl/common/impl/accumulators.hpp \
   /usr/include/pcl-1.14/pcl/common/impl/centroid.hpp \
+  /usr/include/pcl-1.14/pcl/common/impl/common.hpp \
   /usr/include/pcl-1.14/pcl/common/impl/copy_point.hpp \
   /usr/include/pcl-1.14/pcl/common/impl/eigen.hpp \
   /usr/include/pcl-1.14/pcl/common/impl/io.hpp \
@@ -2231,6 +2229,7 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/pcl-1.14/pcl/features/feature.h \
   /usr/include/pcl-1.14/pcl/features/impl/feature.hpp \
   /usr/include/pcl-1.14/pcl/features/normal_3d.h \
+  /usr/include/pcl-1.14/pcl/filters/extract_indices.h \
   /usr/include/pcl-1.14/pcl/filters/filter.h \
   /usr/include/pcl-1.14/pcl/filters/filter_indices.h \
   /usr/include/pcl-1.14/pcl/filters/radius_outlier_removal.h \
@@ -2243,6 +2242,7 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/pcl-1.14/pcl/io/impl/pcd_io.hpp \
   /usr/include/pcl-1.14/pcl/io/low_level_io.h \
   /usr/include/pcl-1.14/pcl/io/lzf.h \
+  /usr/include/pcl-1.14/pcl/io/obj_io.h \
   /usr/include/pcl-1.14/pcl/io/pcd_io.h \
   /usr/include/pcl-1.14/pcl/io/ply/byte_order.h \
   /usr/include/pcl-1.14/pcl/io/ply/io_operators.h \
@@ -2261,9 +2261,15 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
   /usr/include/pcl-1.14/pcl/point_struct_traits.h \
   /usr/include/pcl-1.14/pcl/point_types.h \
   /usr/include/pcl-1.14/pcl/register_point_struct.h \
+  /usr/include/pcl-1.14/pcl/sample_consensus/method_types.h \
+  /usr/include/pcl-1.14/pcl/sample_consensus/model_types.h \
+  /usr/include/pcl-1.14/pcl/sample_consensus/sac.h \
+  /usr/include/pcl-1.14/pcl/sample_consensus/sac_model.h \
   /usr/include/pcl-1.14/pcl/search/kdtree.h \
   /usr/include/pcl-1.14/pcl/search/organized.h \
   /usr/include/pcl-1.14/pcl/search/search.h \
+  /usr/include/pcl-1.14/pcl/segmentation/extract_clusters.h \
+  /usr/include/pcl-1.14/pcl/segmentation/sac_segmentation.h \
   /usr/include/pcl-1.14/pcl/type_traits.h \
   /usr/include/pcl-1.14/pcl/types.h \
   /usr/include/pcl-1.14/pcl/visualization/area_picking_event.h \
@@ -2885,6 +2891,14 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/vtk-9.1/vtkInteractorObserver.h:
 
+/usr/include/vtk-9.1/vtkInteractionStyleModule.h:
+
+/usr/include/vtk-9.1/vtkIndent.h:
+
+/usr/include/vtk-9.1/vtkIdTypeArray.h:
+
+/usr/include/vtk-9.1/vtkIOStream.h:
+
 /usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp:
 
 /usr/include/boost/move/adl_move_swap.hpp:
@@ -2939,8 +2953,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/mpl/begin.hpp:
 
-/usr/include/boost/mp11/detail/mp_list_v.hpp:
-
 /usr/include/boost/mpl/back_inserter.hpp:
 
 /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
@@ -2952,8 +2964,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/preprocessor/arithmetic/limits/dec_256.hpp:
 
 /usr/include/CGAL/Intersections_3/Line_3_Sphere_3.h:
-
-/usr/include/c++/13/bits/deque.tcc:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
 
@@ -3213,6 +3223,10 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/vtk-9.1/vtkGenericDataArray.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
+
+/usr/include/boost/math/tools/precision.hpp:
+
 /usr/include/boost/mp11/detail/mp_defer.hpp:
 
 /usr/include/boost/math/tools/mp.hpp:
@@ -3254,8 +3268,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/iterator/is_iterator.hpp:
 
 /usr/include/boost/predef/os/bsd/open.h:
-
-/usr/include/c++/13/queue:
 
 /usr/include/c++/13/tuple:
 
@@ -3973,6 +3985,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/CGAL/Cartesian/Cartesian_base.h:
 
+/usr/include/pcl-1.14/pcl/sample_consensus/sac_model.h:
+
 /usr/include/CGAL/Intersections_3/Segment_3_Triangle_3.h:
 
 /usr/include/boost/concept/detail/concept_undef.hpp:
@@ -4339,6 +4353,10 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/CGAL/basic.h:
 
+/usr/include/vtk-9.1/vtkIntArray.h:
+
+/usr/include/CGAL/Intersection_traits.h:
+
 /usr/include/vtk-9.1/vtkAbstractMapper3D.h:
 
 /usr/include/CGAL/Cartesian/Segment_2.h:
@@ -4409,8 +4427,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/interprocess/detail/timed_utils.hpp:
 
-/usr/include/vtk-9.1/vtkInteractionStyleModule.h:
-
 /usr/include/CGAL/Intersections_2/Point_2_Ray_2.h:
 
 /usr/include/boost/mpl/aux_/has_begin.hpp:
@@ -4462,12 +4478,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp:
 
 /usr/include/CGAL/Intersections_3/internal/Segment_3_Tetrahedron_3_intersection.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
-
-/usr/include/boost/math/tools/precision.hpp:
-
-/usr/include/c++/13/bits/stl_queue.h:
 
 /usr/include/boost/fusion/iterator/value_of.hpp:
 
@@ -4538,12 +4548,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/fusion/container/vector/detail/begin_impl.hpp:
 
 /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
-
-/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
-
-/usr/include/CGAL/wmult.h:
 
 /usr/include/CGAL/Distance_2/internal/squared_distance_utils_2.h:
 
@@ -4707,6 +4711,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/math/ccmath/isinf.hpp:
 
+/usr/include/eigen3/Eigen/Dense:
+
 /usr/include/CGAL/Intersections_3/Bbox_3_Segment_3.h:
 
 /usr/include/boost/fusion/iterator/segmented_iterator.hpp:
@@ -4836,6 +4842,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/mpl/tag.hpp:
 
 /usr/include/CGAL/Intersections_3/Tetrahedron_3_Triangle_3.h:
+
+/usr/include/pcl-1.14/pcl/common/common.h:
 
 /usr/include/CGAL/kernel_basic.h:
 
@@ -5186,6 +5194,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/CGAL/Weighted_point_2.h:
 
 /usr/include/vtk-9.1/vtkTypeInt64Array.h:
+
+/usr/include/pcl-1.14/pcl/sample_consensus/method_types.h:
 
 /usr/include/boost/fusion/support/tag_of_fwd.hpp:
 
@@ -5739,9 +5749,9 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/mpl/pop_back_fwd.hpp:
 
-/usr/include/boost/mpl/pop_front.hpp:
+/usr/include/pcl-1.14/pcl/segmentation/extract_clusters.h:
 
-/usr/include/boost/mpl/pop_front_fwd.hpp:
+/usr/include/boost/mpl/pop_front.hpp:
 
 /usr/include/boost/mpl/protect.hpp:
 
@@ -5993,8 +6003,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/predef/architecture/superh.h:
 
-/usr/include/vtk-9.1/vtkIdTypeArray.h:
-
 /usr/include/c++/13/tr1/gamma.tcc:
 
 /usr/include/boost/predef/architecture/sys370.h:
@@ -6054,10 +6062,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/CGAL/Intersections_3/Point_3_Segment_3.h:
 
 /usr/include/boost/predef/compiler/metaware.h:
-
-/usr/include/CGAL/Intersection_traits.h:
-
-/usr/include/vtk-9.1/vtkIntArray.h:
 
 /usr/include/boost/predef/compiler/metrowerks.h:
 
@@ -6316,6 +6320,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/include/boost/preprocessor/control/detail/limits/while_256.hpp:
+
+/usr/include/pcl-1.14/pcl/sample_consensus/model_types.h:
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
@@ -6665,6 +6671,10 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/boost/signals2/expired_slot.hpp:
 
+/usr/include/boost/mpl/pop_front_fwd.hpp:
+
+/usr/include/pcl-1.14/pcl/sample_consensus/sac.h:
+
 /usr/include/boost/signals2/signal.hpp:
 
 /usr/include/boost/random/detail/mixmax_skip_N17.ipp:
@@ -6792,8 +6802,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/CGAL/predicates_on_points_2.h:
 
 /usr/include/boost/type_traits/function_traits.hpp:
-
-/usr/include/vtk-9.1/vtkIOStream.h:
 
 /usr/include/boost/type_traits/has_minus.hpp:
 
@@ -7063,8 +7071,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
-/usr/include/c++/13/deque:
-
 /usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/include/boost/mpl/has_key.hpp:
@@ -7075,12 +7081,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/c++/13/bits/stl_construct.h:
 
-/usr/include/c++/13/bits/stl_deque.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/string.h:
-
 /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
 
 /usr/include/c++/13/string_view:
@@ -7090,8 +7090,6 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/preprocessor/cat.hpp:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/vtk-9.1/vtkIndent.h:
 
 /usr/include/boost/interprocess/detail/mpl.hpp:
 
@@ -7581,6 +7579,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/linux/stat.h:
 
+/usr/include/pcl-1.14/pcl/common/impl/common.hpp:
+
 /usr/include/linux/types.h:
 
 /usr/include/boost/type_traits/is_volatile.hpp:
@@ -7629,6 +7629,10 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/pcl-1.14/pcl/features/normal_3d.h:
 
+/usr/include/boost/mp11/detail/mp_list_v.hpp:
+
+/usr/include/pcl-1.14/pcl/filters/extract_indices.h:
+
 /usr/include/c++/13/sstream:
 
 /usr/include/pcl-1.14/pcl/filters/radius_outlier_removal.h:
@@ -7636,6 +7640,14 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/boost/version.hpp:
 
 /usr/include/pcl-1.14/pcl/io/lzf.h:
+
+/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
+
+/usr/include/CGAL/wmult.h:
+
+/usr/include/pcl-1.14/pcl/io/obj_io.h:
 
 /usr/include/CGAL/Vector_2.h:
 
@@ -7665,6 +7677,8 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 
 /usr/include/pcl-1.14/pcl/search/organized.h:
 
+/usr/include/pcl-1.14/pcl/segmentation/sac_segmentation.h:
+
 /usr/include/pcl-1.14/pcl/type_traits.h:
 
 /usr/include/vtk-9.1/vtkDataArray.h:
@@ -7692,6 +7706,10 @@ CMakeFiles/seg.dir/main.cpp.o: /home/geekzone/CLionProjects/Segmentation_Nuage_P
 /usr/include/stdio.h:
 
 /usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/string.h:
 
 /usr/include/time.h:
 

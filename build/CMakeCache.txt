@@ -193,7 +193,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=segmentation_pcl_cgal
+CMAKE_PROJECT_NAME:STATIC=segmentation_pcl_cgal_qt
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -1088,6 +1088,15 @@ segmentation_pcl_cgal_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 segmentation_pcl_cgal_SOURCE_DIR:STATIC=/home/geekzone/CLionProjects/Segmentation_Nuage_Points
+
+//Value Computed by CMake
+segmentation_pcl_cgal_qt_BINARY_DIR:STATIC=/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build
+
+//Value Computed by CMake
+segmentation_pcl_cgal_qt_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+segmentation_pcl_cgal_qt_SOURCE_DIR:STATIC=/home/geekzone/CLionProjects/Segmentation_Nuage_Points
 
 //The directory containing a CMake configuration file for tiff.
 tiff_DIR:PATH=tiff_DIR-NOTFOUND

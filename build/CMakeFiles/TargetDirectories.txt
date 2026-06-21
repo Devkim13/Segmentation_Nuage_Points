@@ -1,3 +1,5 @@
-/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/seg.dir
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/seg_gui.dir
 /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/edit_cache.dir
 /home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/rebuild_cache.dir
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/seg_gui_autogen_timestamp_deps.dir
+/home/geekzone/CLionProjects/Segmentation_Nuage_Points/build/CMakeFiles/seg_gui_autogen.dir
