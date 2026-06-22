@@ -894,22 +894,34 @@ PipelineResult RunPipelineInternal(const std::string& filename)
 
     PipelineResult result;
 
-    const double voxel_size = 0.02;
+    const double voxel_size = 0.05;
 
-    const int sor_mean_k = 30;
-    const double sor_stddev = 1.0;
+    const int sor_mean_k = 20;
+    const double sor_stddev = 1.8;
 
-    const double ror_radius = 0.35;
+    const double ror_radius = 0.40;
     const int ror_min_neighbors = 3;
 
-    const int max_planes = 12;
-    const int min_plane_points = 300;
-    const double plane_distance_threshold = 0.05;
+    const int max_planes = 18;
+    const int min_plane_points = 900;
+    const double plane_distance_threshold = 0.08;
 
-    const double cluster_tolerance = 0.30;
-    const int min_cluster_size = 80;
-    const int max_cluster_size = 30000;
-
+    const double cluster_tolerance = 0.60;
+    const int min_cluster_size = 300;
+    const int max_cluster_size = 60000;
+    std::cout << "\n===== Paramètres utilisés =====" << std::endl;
+    std::cout << "voxel_size = " << voxel_size << std::endl;
+    std::cout << "sor_mean_k = " << sor_mean_k << std::endl;
+    std::cout << "sor_stddev = " << sor_stddev << std::endl;
+    std::cout << "ror_radius = " << ror_radius << std::endl;
+    std::cout << "ror_min_neighbors = " << ror_min_neighbors << std::endl;
+    std::cout << "max_planes = " << max_planes << std::endl;
+    std::cout << "min_plane_points = " << min_plane_points << std::endl;
+    std::cout << "plane_distance_threshold = " << plane_distance_threshold << std::endl;
+    std::cout << "cluster_tolerance = " << cluster_tolerance << std::endl;
+    std::cout << "min_cluster_size = " << min_cluster_size << std::endl;
+    std::cout << "max_cluster_size = " << max_cluster_size << std::endl;
+    std::cout << "===============================\n" << std::endl;
     CloudT::Ptr cloud(new CloudT);
 
     {
